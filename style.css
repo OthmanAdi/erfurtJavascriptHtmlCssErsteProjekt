@@ -1,0 +1,33 @@
+:root {
+    --rgba1: rgba(111, 128, 167, 0.42);
+    --rgba2: rgba(203, 178, 92, 0.6);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#randomBodyColor {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr 1fr;
+}
+
+#randomBodyColor {
+    height: 100vh;
+    text-align: center;
+}
+
+.MakeMeLookNice {
+    grid-row: 2 / span 1;
+    height: 100px;
+    /*width: 100vw;*/
+    border: 10px var(--rgba2) dashed;
+    background: linear-gradient(to left, var(--rgba1), var(--rgba2));
+}
+
+#randomColor {
+    color: var(--rgba1);
+}
