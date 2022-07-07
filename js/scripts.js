@@ -51,3 +51,10 @@ function takeTheFunnyValue(){
 }
 
 setInterval(takeTheFunnyValue,1000);
+
+function showForm(){
+    var template = document.getElementById("contact-form");
+    var cloneTemplate = template.content.cloneNode(true);
+    document.querySelector(".container1").appendChild(cloneTemplate);
+    cloneTemplate.innerHTML = "";
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Template tag & Fixed Navbar</title>
+    <script src="/js/scripts.js"></script>
+    <link rel="stylesheet" href="/css/templateStyle.css">
+</head>
+<body>
+<div class="wrapper">
+    <nav class="nav">
+        <div class="container">
+            <h1 class="logo"><a href="template.html">AR-Fashion</a></h1>
+            <ul>
+                <li><a href="template.html"> Home</a></li>
+                <li><a href="index.html"> Voting System with Random JS colors</a></li>
+                <li><a href="theGrid.html">Grid & Transition-Transform</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!---->
+    <!--Main Page Body-->
+    <div class="body container1">
+        <button onclick="showForm()" class="show-form" type="button">Show Form</button>
+        <template id="contact-form">
+            <div class="form-content-wrapper">
+                <input type="text" placeholder="Enter your name"></input>
+                <input type="email" placeholder="Enter your email"></input>
+                <p>Tell us why you want to use our product?</p>
+                <ul>
+                    <input type="radio">Production</input>
+                    <input type="radio">Testing/Learning</input>
+                    <input type="radio">Commercial</input>
+                </ul>
+            </div>
+        </template>
+    </div>
+</div>
+<!---->
+<!--Javascript Link-->
+<script src="/js/scripts.js"></script>
+</body>
+</html>

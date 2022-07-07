@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+:root {
+    --rgba1: rgba(111, 128, 167, 0.42);
+    --rgba2: rgba(203, 178, 92, 0.6);
+    --c1: #CDF0EA;
+    --c2: #F9F9F9;
+    --c3: #F6C6EA;
+    --c4: #FAF4B7;
+    --c5: #F2789F;
+    --c6: #B5DEFF;
+    --textHeight: 1em; /*schriftart größe*/
+    --text-Style: 'Fredoka One', cursive; /*schriftart style*/
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.theGridBody {
+    height: 100vh;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr 1fr;
+    background: radial-gradient(ellipse at top, var(--c1), var(--c2), var(--c3), transparent), radial-gradient(ellipse at top, var(--c4), var(--c5), var(--c6) transparent);
+}
+
+#randomBodyColor {
+    height: 100vh;
+    text-align: center;
+}
+
+.MakeMeLookNice {
+    grid-row: 2 / span 1;
+    height: 100px;
+    /*width: 100vw;*/
+    border: 10px var(--rgba2) dashed;
+    background: linear-gradient(to left, var(--rgba1), var(--rgba2));
+}
+
+#randomColor {
+    color: var(--rgba1);
+    grid-column: 6 / span 3;
+}
+
+.MakeMeLookNice {
+    grid-row: 2 / span 1;
+    grid-column: 6 / span 2;
+}
+
+.runJS {
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 1;
+}
+
+.more {
+    grid-row: 2 / span 1;
+    grid-column: 1 / span 1;
+}
+
+.less {
+    grid-row: 2 / span 1;
+    grid-column: 2 / span 1;
+}
+
+/*New Style code from 16.06.2022*/
+.newTextStyle {
+    font-size: var(--textHeight);
+    font-family: var(--text-Style);
+    text-shadow: 5px 5px 2px #FAF4B7;
+    box-shadow: 5px 5px 8px #B5DEFF;
+    transition: box-shadow 0.4s ease-in;
+}
+
+.newTextStyle:hover {
+    text-shadow: 5px 5px 10px #F2789F;
+    box-shadow: 10px 10px 5px #F6C6EA;
+    opacity: 0.6; /*Durchsichtigkeit*/
+    transform: scale(1.1, 1.1); /*Skalieren von 2D objekte*/
+}
